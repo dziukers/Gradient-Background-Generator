@@ -1,0 +1,101 @@
+html{
+    width:100%;
+    height:100%;
+}
+body{
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: rgba(0,0,0,.5);
+    top:15%;
+    font-family: 'Raleway', sans-serif;;
+    background:linear-gradient(to right, rgb(32, 156, 223), rgb(89, 170, 85));
+    box-sizing: border-box;
+}
+h1{
+    font: 600 2.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width:100%;
+    
+}
+h2{
+  
+    display:inline-block;
+    color: rgba(0,0,0,.8);
+
+}
+input[type="color"] {
+	appearance: none;
+	width: 40px;
+    border: 1px solid black;
+    height:25px;
+    padding:0px;
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 10px;
+    box-shadow: 0px 1px 2px black;
+}
+input[type="color"]:focus{
+    outline: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+button{
+    position: relative;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid black;
+    height:30px;
+    width:100px;
+    padding:0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: top;
+    box-shadow: 0px 1px 2px black;
+}
+button:focus {outline:0;}
+
+button:hover{
+    background-color: rgba(255,255,255,0.6); 
+}
+button img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transform-origin:50% 0%;
+    transition: all 1s ease;
+}
+
+h3{
+    color: rgba(0,0,0,.7);
+    font: 900 1em 'Raleway', sans-serif;
+    margin-top: 20vh;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+@keyframes anim{
+    to {transform: rotate(90deg)scale(0.8)translate(0%,10%);}
+}
+@keyframes anim2{
+    from {transform: rotate(90deg)scale(0.8)translate(0%,10%);}
+    to {transform: rotate(180deg)scale(1)translate(50%,-50%); ;}
+}@keyframes anim3{
+    from {transform: rotate(180deg)scale(1)translate(50%,-50%) ;}
+    to {transform: rotate(270deg)scale(0.8)translate(0,-110%) ;}}
+@keyframes anim4{
+    from {transform: rotate(270deg)scale(0.8)translate(0,-110%);}
+    to {transform: rotate(360deg)scale(1) translate(-50%,-50%);}}
+
